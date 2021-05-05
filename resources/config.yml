@@ -11,7 +11,7 @@ db_type: "sqlite"
 connect_db:
     
     # Connessione a un database mysql
-    # La tabella si ritroverà nel database dell'utente configurato sotto il
+    # La tabella si ritroverÃ  nel database dell'utente configurato sotto il
     # nome di PearRewards
     mysql:
         username: "username"
@@ -19,8 +19,8 @@ connect_db:
         database: "database"
         
     # Connessione a un database sqlite (default)
-    # Il database si ritroverà in plugin/PearRewards/nomedb.db
-    # Nel caso non esista, verrà creato in automatico all'avvio del plugin
+    # Il database si ritroverÃ  in plugin/PearRewards/nomedb.db
+    # Nel caso non esista, verrÃ  creato in automatico all'avvio del plugin
     sqlite:
         database: "pearrewards.db"
 
@@ -33,8 +33,8 @@ connect_db:
 # daily: Ogni elemento caratterizza un giorno per i rewards
 guy_type: "chest"
 
-# Se attivo verr� visualizzato un menu statico una volta gi� riscattato il reward giornaliero.
-# Se disattivo verr� visualizzato il menu normale con i giorni restanti.
+# Se attivo verrà visualizzato un menu statico una volta già riscattato il reward giornaliero.
+# Se disattivo verrà visualizzato il menu normale con i giorni restanti.
 used-rewards-menu: false
 
 #Chiudi il menu dopo aver riscattato il reward
@@ -43,7 +43,7 @@ close-gui: false
 #  Messaggi di notifica 
 notify_message: "&a&lHai una ricompensa! &a[Clicca qui per riscattarla]"
 empty_message: "Fai spazio nel tuo inventario!"
-used_rewards: "Hai giàriscattato il tuo rewards!"
+used_rewards: "Hai giÃ riscattato il tuo rewards!"
 
 # # # # # # # # # # #
 # Lista dei rewards #
@@ -51,7 +51,7 @@ used_rewards: "Hai giàriscattato il tuo rewards!"
 
 # Numero di giorno:
 #     Elemento (id dell'elemento)
-#     Quantità (numero)
+#     QuantitÃ  (numero)
 #     Comando  (comando per il give)
 #
 # Il comando per i give deve contenere questi parametri
