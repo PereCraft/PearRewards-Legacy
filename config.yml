@@ -1,0 +1,82 @@
+# # # # # # #
+#  Database #
+# # # # # # #
+
+# Impostare il db da usare 
+# MySQL
+# SQLite (default)
+db_type: "sqlite"
+
+# Connessione al database
+connect_db:
+    
+    # Connessione a un database mysql
+    # La tabella si ritrover√† nel database dell'utente configurato sotto il
+    # nome di PearRewards
+    mysql:
+        username: "username"
+        password: "password"
+        database: "database"
+        
+    # Connessione a un database sqlite (default)
+    # Il database si ritrover√† in plugin/PearRewards/nomedb.db
+    # Nel caso non esista, verr√† creato in automatico all'avvio del plugin
+    sqlite:
+        database: "pearrewards.db"
+
+# # # # # # # # # # # #
+# Interfaccia grafica #
+# # # # # # # # # # # #
+
+# Imposta il tipo di gui
+# chest (default): A forma di chest
+# daily: Ogni elemento caratterizza un giorno per i rewards
+guy_type: "chest"
+
+# Se attivo verr‡ visualizzato un menu statico una volta gi‡ riscattato il reward giornaliero.
+# Se disattivo verr‡ visualizzato il menu normale con i giorni restanti.
+used-rewards-menu: false
+
+#Chiudi il menu dopo aver riscattato il reward
+close-gui: false
+
+#  Messaggi di notifica 
+notify_message: "&a&lHai una ricompensa! &a[Clicca qui per riscattarla]"
+empty_message: "Fai spazio nel tuo inventario!"
+used_rewards: "Hai gi√†riscattato il tuo rewards!"
+
+# # # # # # # # # # #
+# Lista dei rewards #
+# # # # # # # # # # #
+
+# Numero di giorno:
+#     Elemento (id dell'elemento)
+#     Quantit√† (numero)
+#     Comando  (comando per il give)
+#
+# Il comando per i give deve contenere questi parametri
+# %p% : Player
+# es: give %p% element quantity
+#     give Utente minecraft:coal 10
+rewards:
+    1: 
+        give_command: "give %p% minecraft:coal 10"
+        message: "&aHai riscattato il reward"
+    2:
+        give_command: "give %p% minecraft:iron_ingot 7"
+        message: "&aHai riscattato il reward"
+    3:
+        give_command: "give %p% minecraft:gold_ingot 7"
+        message: "&aHai riscattato il reward"
+    4:
+        give_command: "give %p% minecraft:redstone 6"
+        message: "&aHai riscattato il reward"
+    5:
+        give_command: "give %p% minecraft:lapis_lazuli 4"
+        message: "&aHai riscattato il reward"
+    6:
+        give_command: "give %p% minecraft:diamond 2"
+        message: "&aHai riscattato il reward"
+    7:
+        give_command: "give %p% minecraft:emerald 1"
+        message: "&aHai riscattato il reward"

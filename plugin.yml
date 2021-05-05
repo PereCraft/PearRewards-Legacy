@@ -1,0 +1,19 @@
+name: PearRewards
+version: 1.2
+api-version: 1.12
+description: Plugin per i daily rewards
+author: PereCraft
+main: pearrewards.PearRewards
+commands:
+    pearrewards:
+        description: Gestione del plugin
+        aliases: [pr]
+    daily:
+        description: Mostra la gui per riscattare i reward
+permissions:
+    pearrewards.shortdaily:
+        description: Riscatta rewards con /daily
+        default: true
+    pearrewards.admin:
+        description: Comandi di amministrazione
+        default: op
